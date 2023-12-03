@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>MCA CAI Proto</title>
+  <title>Public Internet in Maine</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -9,25 +9,53 @@
 </head>
 <body>
 
-<div class="container-fluid p-5 bg-primary text-white text-center">
-  <h1>Maine CAIs</h1>
-  <p>Look through the database of Maine CAIs</p> 
+<div class="container-fluid p-2 bg-success text-white text-center">
+  <h1>Public Internet in Maine</h1>
+  <p>Search and explore where to get free internet in Maine</p> 
 </div>
   
-<div class="container mt-5">
+  
+<div>
   <div class="row">
-    <div class="col-sm-6">
-      <h3>CAI Heat Map</h3>
-      <iframe width="100%" height="1076" frameborder="0"
-  src="https://observablehq.com/embed/d861aa8ca5c37465@176?cells=mapWithHeatAndGeoJSON"></iframe>
+    <!-- Map Column -->
+    <div class="col-md-8">
+      <div id="observablehq-container-8434142f"></div>
+
     </div>
-    <div class="col-sm-6">
-      <h3>CAI Search</h3>
-      <iframe width="100%" height="864" frameborder="0"
-      src="https://observablehq.com/embed/ce337527988109d3@876?cells=combined_menu2%2Ccontainer"></iframe>
+    <!-- New Div Column -->
+    <div class="col-md-4">
+      <!-- Add your content here -->
+      <!-- Add padding here -->
+      <div id="observablehq-combined_menu2-8434142f" style="padding: 10px;">
+          <!-- Content goes here -->
+      </div>
+      <!-- Add padding around this -->
+      <p4 style="padding: 15px;">
+        Community anchor institutions are organizations that play a vital role in local communities by providing essential services, 
+          support, and resources. They are typically deeply rooted in their communities and often serve as a focal point for local 
+          activities and services. These institutions can include a wide variety of entities, each contributing to the community in 
+          unique ways.
+      </p4>
+  </div>
+      
+
     </div>
   </div>
 </div>
 
 </body>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/36490a6dc33c0d43.js?v=4";
+new Runtime().module(define, name => {
+  if (name === "combined_menu2") return new Inspector(document.querySelector("#observablehq-combined_menu2-8434142f"));
+  if (name === "container") return new Inspector(document.querySelector("#observablehq-container-8434142f"));
+  return ["map","city_menu","entity_type_menu","location_input_menu","combined_menu"].includes(name);
+});
+
+</script>
 </html>
