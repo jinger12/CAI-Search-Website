@@ -23,7 +23,9 @@
   position: relative; /* Relative positioning to place the arrow */
   padding-top: 10px; /* Adjust this value to move the div down */
 }
-
+.header-bg {
+  background-color: black !important; /* Overrides Bootstrap's bg-success class */
+}
   </style>
 </head>
 <body>
@@ -31,11 +33,13 @@
 </head>
 <body>
 
-<div class="container-fluid p-2 bg-success text-white text-center">
-  <h1>Public Internet in Maine</h1>
-  <p>Search and explore where to get free internet in Maine</p> 
-</div>
-  
+  <div class="container-fluid p-2 bg-success text-white text-center header-bg">
+    <h1>Free Public Internet in Maine</h1>
+    <p2>Find places you can get free and secure internet!</p2>
+    <br>
+    <p2>Zoom in and a circle will be displayed, indicating locations within a ~15 minute walk.</p2> 
+  </div>
+<!-- Search and explore where to get free internet in Maine. -->
   
 <div class="row">
   <!-- Map Column -->
@@ -53,7 +57,7 @@
       <!-- Arrow pointing down -->
     </div>
     <div class="info-box">
-        <h8>Search any location in Maine.</h8>
+        <h8>Search any location.</h8>
       <div id="observablehq-viewof-location_input_menu-70a402cd" style="padding: 10px;">
         <!-- Content goes here -->
       </div>
@@ -61,12 +65,7 @@
         <!-- Content goes here -->
       </div>
       <p class="my-paragraph">
-        Community Anchor Institutions are central to their communities, offering vital resources including free public internet access. 
-        They are key hubs for local activities, bridging the digital divide and ensuring community-wide connectivity.
-      </p>
-      <br>
-      <p class="my-paragraph">
-        Once you choose a location, a circle will be displayed, indicating the estimated area you can comfortably walk within 15 minutes.
+        Search and explore where to get free internet in Maine.
       </p>
     </div>
   </div>
