@@ -10,6 +10,6 @@ The user interface consists of a navigation bar at the top with the option to "G
 
 On the right side of the interface, there's a panel with a map layer toggle that allows the user to switch between "Streets," "Topo," and "Satellite" views of the map. 
 
-The map was made in Observable notebooks using D3 and other built-in Observable functions and features. 
+The map was made in Observable notebooks using D3 and other built-in Observable functions and features. Feel free to explore the code bellow.
 
 ## Insert link to notebook here
