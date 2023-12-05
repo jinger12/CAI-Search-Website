@@ -3,7 +3,7 @@
 This website is a display of locations in Maine with free public internet. The concept is to decrease the digital divide by offering free internet to those who cannot afford it or have the ability to purchase a subscription for various reasons. 
 ![Website Preview](figs/cai_search_site.png)
 
-[CAI search URL](https://jinger12.github.io/CAI-Search-Website/CAI_search.html)]
+[Go to the CAI search website!](https://jinger12.github.io/CAI-Search-Website/CAI_search.html)
 
 This project is a continuation of the work I did for the Maine Connectivity Authority. I created an updated database with every location in Maine that qualifies as a Community Anchor Institution (a place with free public internet). The page provides a service to search and explore locations where free and secure internet is available within the state of Maine. Users can zoom in on a map, which will then display circles indicating locations that are within approximately a 15-minute walk.
 
