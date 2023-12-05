@@ -13,4 +13,4 @@ On the right side of the interface, there's a panel with a map layer toggle that
 
 The map was made in Observable notebooks using D3 and other built-in Observable functions and features. Feel free to explore the code bellow.
 
-[observablehq notebook URL](https://observablehq.com/d/f5268ba5aa8f6eee)]
+[observablehq notebook URL](https://observablehq.com/d/f5268ba5aa8f6eee)
